@@ -4,9 +4,8 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
-import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -16,8 +15,10 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.text.ClickableText
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Text
@@ -44,7 +45,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             SanittasAppTheme {
-                Register()
+                App()
             }
         }
     }
@@ -143,6 +144,27 @@ fun App() {
             Text(text = "Acessar")
         }
     }
+    Column(
+        modifier = Modifier
+            .fillMaxHeight()
+            .padding(bottom = 30.dp),
+        verticalArrangement = Arrangement.Bottom
+    ) {
+        Divider(
+            color = Color.LightGray
+        )
+
+        Text(
+            text = "Não tenho uma conta. Toque para criar uma agora.",
+            modifier = Modifier
+                .padding(top = 10.dp)
+                .fillMaxWidth(),
+            textAlign = TextAlign.Center,
+            fontSize = 13.sp,
+            color = Color.Gray,
+            )
+    }
+
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -287,6 +309,6 @@ fun Register() {
 @Composable
 fun AppPreview() {
     SanittasAppTheme {
-        Register()
+        App()
     }
 }
