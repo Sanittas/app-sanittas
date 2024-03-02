@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">sanittas_mobile</string>
+    <string name="home_top">Agende os seus serviços</string>
+    <string name="home_label">Em qual cidade você está?</string>
+    <string name="home_placeholder">Digite o nome da sua cidade</string>
+    <string name="icon_id1">Médico</string>
+    <string name="icon_id2">Dentista</string>
+    <string name="icon_id3">Enfermeiro</string>
+    <string name="icon_id4">Psicólogo</string>
+    <string name="icon_id5">Fisioterapeuta</string>
+    <string name="icon_id6">Geriatra</string>
+    <string name="icon_id7">Pediatra</string>
+    <string name="icon_id8">Nutricionista</string>
+    <string name="icon_id9">Obstetra</string>
+</resources>
