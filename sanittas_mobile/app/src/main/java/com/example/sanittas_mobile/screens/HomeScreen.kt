@@ -2,6 +2,7 @@ package com.example.sanittas_mobile.screens
 
 import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -204,6 +205,7 @@ fun CardItem(
         modifier = Modifier
             .padding(horizontal = 10.dp, vertical = 25.dp)
             .width(150.dp)
+            .clickable {  }
     ) {
         Column(
             modifier = Modifier.padding(8.dp),

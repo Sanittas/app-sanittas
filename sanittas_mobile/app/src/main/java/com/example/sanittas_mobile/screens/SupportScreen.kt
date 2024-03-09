@@ -49,7 +49,6 @@ fun SupportScreen() {
                 painter = painterResource(id = R.drawable.arrow_back),
                 contentDescription = null,
                 modifier = Modifier
-                    .height(50.dp)
                     .aspectRatio(1f)
                     .padding(start = 10.dp)
             )

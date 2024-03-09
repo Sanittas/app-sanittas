@@ -20,4 +20,10 @@
     <string name="support_icon_id6">Política e termos de uso</string>
     <string name="support_top_bar">Suporte</string>
     <string name="support_top">Como podemos ajudar?</string>
+    <string name="explore_top_bar">Explorar</string>
+    <string name="companies_top">Empresas</string>
+    <string name="explore_label">Pesquisar</string>
+    <string name="companies_placeholder">Digite o nome da empresa</string>
+    <string name="employees_placeholder">Digite o nome do profissional</string>
+    <string name="employees_top">Profissionais</string>
 </resources>
