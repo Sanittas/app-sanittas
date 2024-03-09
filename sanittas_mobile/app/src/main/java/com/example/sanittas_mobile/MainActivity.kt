@@ -11,13 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.sanittas_mobile.screens.ServicesScreen
+import com.example.sanittas_mobile.screens.SupportScreen
 import com.example.sanittas_mobile.ui.theme.Sanittas_mobileTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ServicesScreen()
+            SupportScreen()
         }
     }
 }

@@ -19,7 +19,6 @@ import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.LocationOn
-import androidx.compose.material.icons.filled.Search
 import androidx.compose.material3.Card
 import androidx.compose.material3.Divider
 import androidx.compose.material3.Icon
@@ -34,7 +33,6 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -103,12 +101,14 @@ fun ServicesScreen() {
                 Text(stringResource(id = R.string.home_placeholder))
             },
             trailingIcon = {
-                Icon(imageVector = Icons.Default.LocationOn,
+                Icon(
+                    imageVector = Icons.Default.LocationOn,
                     contentDescription = null,
                     tint = colorResource(id = R.color.sanittas),
-                    modifier = Modifier.size(24.dp))
+                    modifier = Modifier.size(24.dp)
+                )
             }
-            )
+        )
         Spacer(modifier = Modifier.height(20.dp))
         CardList()
         AppNavigation()
@@ -123,57 +123,57 @@ fun PreviewServicesScreen() {
 
 @Composable
 fun CardList() {
-    data class icon(
+    data class Icon(
         val id: Int,
         val text: String,
         val imagem: Int = R.drawable.medico
     )
 
     val listOfIcons = listOf(
-        icon(
+        Icon(
             id = 1,
             imagem = R.drawable.medico,
-            text = stringResource(id = R.string.icon_id1)
+            text = stringResource(id = R.string.home_icon_id1)
         ),
-        icon(
+        Icon(
             id = 2,
             imagem = R.drawable.dentista,
-            text = stringResource(id = R.string.icon_id2)
+            text = stringResource(id = R.string.home_icon_id2)
         ),
-        icon(
+        Icon(
             id = 3,
             imagem = R.drawable.enfermeiro,
-            text = stringResource(id = R.string.icon_id3)
+            text = stringResource(id = R.string.home_icon_id3)
         ),
-        icon(
+        Icon(
             id = 4,
             imagem = R.drawable.psicologo,
-            text = stringResource(id = R.string.icon_id4)
+            text = stringResource(id = R.string.home_icon_id4)
         ),
-        icon(
+        Icon(
             id = 5,
             imagem = R.drawable.fisioterapeuta,
-            text = stringResource(id = R.string.icon_id5)
+            text = stringResource(id = R.string.home_icon_id5)
         ),
-        icon(
+        Icon(
             id = 6,
             imagem = R.drawable.geriatra,
-            text = stringResource(id = R.string.icon_id6)
+            text = stringResource(id = R.string.home_icon_id6)
         ),
-        icon(
+        Icon(
             id = 7,
             imagem = R.drawable.pediatra,
-            text = stringResource(id = R.string.icon_id7)
+            text = stringResource(id = R.string.home_icon_id7)
         ),
-        icon(
+        Icon(
             id = 8,
             imagem = R.drawable.nutricionista,
-            text = stringResource(id = R.string.icon_id8)
+            text = stringResource(id = R.string.home_icon_id8)
         ),
-        icon(
+        Icon(
             id = 9,
             imagem = R.drawable.obstetra,
-            text = stringResource(id = R.string.icon_id9)
+            text = stringResource(id = R.string.home_icon_id9)
         )
     )
 
